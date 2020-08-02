@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <!-- 상단바 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="랜덤 룰렛 돌리기"
+            android:textColor="@color/colorBlack"
+            android:textSize="22dp"
+            android:fontFamily="@font/notosanscjkkr_medium"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="550">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="10" />
+
+            <!-- 룰렛 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="260">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/wheel"
+                    android:layout_width="310dp"
+                    android:layout_height="310dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/roulette_img" />
+
+                <ImageView
+                    android:id="@+id/wheelPoint"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/roulette_point" />
+
+                <Button
+                    android:id="@+id/rotate_btn"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/roulette_btn" />
+            </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="160"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/roulette_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="START 버튼을 눌러주세요!"
+                    android:textColor="#111"
+                    android:textSize="17dp"
+                    android:visibility="visible"
+                    android:fontFamily="@font/notosanscjkkr_regular"/>
+
+                <!-- 룰렛 결과 가게 추천 -->
+                <LinearLayout
+                    android:id="@+id/roulette_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="지금 당신이 갈 음식점은"
+                        android:textColor="#111"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/notosanscjkkr_regular"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="-20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/roulette_storeName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text=""
+                            android:textColor="#111"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/notosanscjkkr_regular"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 입니다!"
+                            android:textColor="#111"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/notosanscjkkr_regular"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/roulette_result_btn"
+                        android:layout_width="250dp"
+                        android:layout_height="46dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/roulette_button_click"
+                        android:text="상세보기"
+                        android:textColor="@drawable/roulette_button_textcolor"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/notosanscjkkr_regular"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="110" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

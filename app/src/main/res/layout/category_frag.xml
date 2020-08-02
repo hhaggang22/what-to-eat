@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:weightSum="450">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="음식점 월드컵"
+                android:textColor="@color/colorBlack"
+                android:textSize="22dp"
+                android:fontFamily="@font/notosanscjkkr_medium"/>
+
+            <!-- text라 화면 크기가 바뀌어도 변화X -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:weightSum="360">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="40" />
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="280"
+                    android:text="드시고 싶은 음식의\n카테고리를 선택해 주세요"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="19dp"
+                    android:fontFamily="@font/notosanscjkkr_regular"/>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="40" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:weightSum="365">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="70" />
+                <!-- 버튼1 -->
+                <Button
+                    android:id="@+id/category_kor"
+                    android:layout_width="0px"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="110"
+                    android:background="@drawable/category_button_click"
+                    android:text="한식"
+                    android:textColor="@drawable/category_button_textcolor"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/notosanscjkkr_regular"/>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5" />
+
+                <!-- 버튼2 -->
+                <Button
+                    android:id="@+id/category_chi"
+                    android:layout_width="0px"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="110"
+                    android:background="@drawable/category_button_click"
+                    android:text="중식"
+                    android:textColor="@drawable/category_button_textcolor"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/notosanscjkkr_regular"/>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="70" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:weightSum="365">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="12.5" />
+
+                <!-- 버튼3 -->
+                <Button
+                    android:id="@+id/category_west"
+                    android:layout_width="0px"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="110"
+                    android:background="@drawable/category_button_click"
+                    android:text="양식"
+                    android:textColor="@drawable/category_button_textcolor"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/notosanscjkkr_regular"/>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5" />
+
+                <!-- 버튼4 -->
+                <Button
+                    android:id="@+id/category_jpn"
+                    android:layout_width="0px"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="110"
+                    android:background="@drawable/category_button_click"
+                    android:text="일식"
+                    android:textColor="@drawable/category_button_textcolor"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/notosanscjkkr_regular"/>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5" />
+
+                <!-- 버튼5 -->
+                <Button
+                    android:id="@+id/category_snak"
+                    android:layout_width="0px"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="110"
+                    android:background="@drawable/category_button_click"
+                    android:text="분식"
+                    android:textColor="@drawable/category_button_textcolor"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/notosanscjkkr_regular"/>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="12.5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:weightSum="365">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="70" />
+
+                <!-- 버튼6 -->
+                <Button
+                    android:id="@+id/category_meat"
+                    android:layout_width="0px"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="110"
+                    android:background="@drawable/category_button_click"
+                    android:text="고기"
+                    android:textColor="@drawable/category_button_textcolor"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/notosanscjkkr_regular"/>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5" />
+
+                <!-- 버튼7 -->
+                <Button
+                    android:id="@+id/category_etc"
+                    android:layout_width="0px"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="110"
+                    android:background="@drawable/category_button_click"
+                    android:text="기타"
+                    android:textColor="@drawable/category_button_textcolor"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/notosanscjkkr_regular"/>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="70" />
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

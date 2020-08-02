@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="음식점 월드컵"
+            android:textColor="@color/colorBlack"
+            android:textSize="22dp"
+            android:fontFamily="@font/notosanscjkkr_medium"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="현재 시각은 "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/notosanscjkkr_regular"/>
+
+                    <DigitalClock
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/notosanscjkkr_regular"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/clock_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-20dp"
+                    android:gravity="center_horizontal"
+                    android:text="TEXT"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/notosanscjkkr_regular"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
+
+                <ImageView
+                    android:id="@+id/store_img"
+                    android:layout_width="320px"
+                    android:layout_height="320px"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/recommendation_img"
+                    android:fontFamily="@font/notosanscjkkr_regular"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/store_frag_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+                android:text="당신의 취향과 일치하는\n음식점을 추천드려요!"
+                android:textColor="@color/colorBlack"
+                android:textSize="17dp"
+                android:fontFamily="@font/notosanscjkkr_regular"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/store_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
